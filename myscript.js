@@ -8,7 +8,6 @@
 
 // SETUP 
 let basicPrice ; 
-let discount ; 
 let finalPrice ; 
 let message ; 
 const pricePerKm = 0.21; 
@@ -26,15 +25,13 @@ basicPrice =  numberOfKm * pricePerKm ;
 console.log("Prezzo base:", basicPrice.toFixed(2) ,"€"); 
 
 if(age < 18) {
-    discount = basicPrice * 0.20 ; // sconto 
-    finalPrice = basicPrice - discount ; // prezzo finale 
+    finalPrice = basicPrice * 0.80; // prezzo finale 
     message = "Ti è stato applicato uno sconto del 20% perché sei minorenne."; 
     //console.log("Prezzo scontato UNDER 18:",finalPrice.toFixed(2), "€"); 
 }
 
 else if (age > 65) {
-    discount = basicPrice * 0.40;
-    finalPrice = basicPrice - discount ;
+    finalPrice = basicPrice * 0.60 ;
     message = "Ti è stato applicato uno sconto del 40% perché hai più di 65 anni "; 
     //console.log("Prezzo scontato OVER 65:",finalPrice.toFixed(2), "€");
 }

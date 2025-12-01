@@ -31,12 +31,14 @@ if(age < 18) {
     message = "Ti è stato applicato uno sconto del 20% perché sei minorenne."; 
     //console.log("Prezzo scontato UNDER 18:",finalPrice.toFixed(2), "€"); 
 }
+
 else if (age > 65) {
     discount = basicPrice * 0.40;
     finalPrice = basicPrice - discount ;
     message = "Ti è stato applicato uno sconto del 40% perché hai più di 65 anni "; 
     //console.log("Prezzo scontato OVER 65:",finalPrice.toFixed(2), "€");
 }
+
 else {
     finalPrice = basicPrice; 
     message = "Prezzo pieno! Non rispetti i requisiti per poter ricevere lo sconto"; 
